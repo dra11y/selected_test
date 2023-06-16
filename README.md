@@ -4,6 +4,10 @@ A Flutter project to demonstrate the lack of `selected` accessibility trait/stat
 
 This app has a simple home page with three tab components that demonstrate their accessibility issues and "hack" fixes.
 
+<img src="screenshots/screenshot1.png" alt="Screenshot #1 showing 3rd tab in each component selected" style="width: 45%; float: left;">
+
+<img src="screenshots/screenshot2.png" alt="Screenshot #2 showing semantics debugger not indicating selected tab" style="width: 45%; margin-left: 5%;">
+
 __The first two tabs in each component are "hacked" to make them read out their selected status, and announce when selected. The third tab in each component is left alone with Flutter default behavior to show the below problems.__
 
 ## Flutter version
@@ -50,7 +54,7 @@ Tabs do not announce their `selected` state when:
     - The __first two tabs__ in each component are "hacked" to make them read out their selected status, and announce when they are selected. This is __bad practice__ for three reasons:
         - It requires each developer to do a lot of extra work to make these standard components accessible, that most developers will not know how to do.
         - It bypasses `MaterialLocalizations`.
-        - It does not use proper accessibility roles (traits).
+        - It does not use proper accessibility roles/traits for the selected status. __The selected status seems to be missing from the engine on these platforms.__
     - The __third tab__ in each component is left alone to show that its selected status is not read out and that it does not announce itself when selected.
 - Toggle the Material 3 switch to switch between `NavigationBar` and `BottomNavigationBar`
 - Toggling the Semantics Debugger is self-explanatory.
