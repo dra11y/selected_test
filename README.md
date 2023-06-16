@@ -4,9 +4,9 @@ A Flutter project to demonstrate the lack of `selected` accessibility trait/stat
 
 This app has a simple home page with three tab components that demonstrate their accessibility issues and "hack" fixes.
 
-<img src="screenshots/screenshot1.png" alt="Screenshot #1 showing 3rd tab in each component selected" style="width: 40%; float: left;">
+<img src="screenshots/screenshot1.png" alt="Screenshot #1 showing 3rd tab in each component selected" style="width: 30%; float: left;">
 
-<img src="screenshots/screenshot2.png" alt="Screenshot #2 showing semantics debugger not indicating selected tab" style="width: 40%; margin-left: 2%;">
+<img src="screenshots/screenshot2.png" alt="Screenshot #2 showing semantics debugger not indicating selected tab" style="width: 30%; margin-left: 2%;">
 
 __The first two tabs in each component are "hacked" to make them read out their selected status, and announce when selected. The third tab in each component is left alone with Flutter default behavior to show the below problems.__
 
